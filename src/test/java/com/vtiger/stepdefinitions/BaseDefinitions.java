@@ -75,7 +75,8 @@ public class BaseDefinitions {
 		else
 		{
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();	
+			driver = new ChromeDriver();
+			System.out.println("started");
 		}
 			
 		driver.get(prop.getProperty("AppUrl"));
